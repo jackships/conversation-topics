@@ -1,0 +1,22 @@
+{
+  "name": "conversation-topics",
+  "version": "1.0.0",
+  "description": "An open dataset of 900+ conversation, icebreaker, debate, ESL, deep-question and writing topics, plus a tiny no-repeat picker.",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "default": "./src/index.js" },
+    "./topics.json": "./data/topics.json"
+  },
+  "files": ["src", "data"],
+  "engines": { "node": ">=20.10" },
+  "scripts": {
+    "test": "node --test",
+    "example": "node examples/cli.js --category icebreaker --audience workplace -n 3"
+  },
+  "keywords": ["conversation-starters", "icebreakers", "debate-topics", "esl", "writing-prompts", "dataset"],
+  "author": "Jack Ships",
+  "license": "MIT"
+}
